@@ -17,7 +17,7 @@
             background-color: #ebddbf;
             height:220px;
         }
-        img {
+        .header > img {
             margin-top: 12px;
             width: 16%;
         }
@@ -27,19 +27,19 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             list-style: none;
-            margin-top: -20px;
+            margin-top: -27px;
             margin-left: 200px;
             margin-right: 200px;
             padding-top: 10px;
             padding-bottom: 10px;
             align-items: center;
             color: whitesmoke;
-            font-weight: 550;
-            font-family: Verdana;
+            font-weight: 900;
+            font-family: "Courier New";
             background-color: #62a07b;
         }
         li a {
-            display: block;
+            display:block;
             color: white;
             text-align: center;
             padding: 5px;
@@ -57,22 +57,74 @@
             color-scheme: #decba0, #a0ab94, #6b9795, #594461, #6e1538;
             color-scheme: #81749c, #4d3e6b, #8daec3, #c5dfe0, #fcfce2;
         }
+        .foto-nome {
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .foto-nome > img {
+            width: 20%;
+            border-radius:50%;
+            border-style:solid;
+            border-color: #766b8f;
+            border-width: 10px;
+        }
+        .foto-nome > h5 {
+            background-color: #7ebeb2;
+            font-family:'Courier New';
+            color: white;
+            padding: 4px;
+            margin-top: -15px;
+            border-radius: 50px;
+        }
+        .foto-nome > h2 {
+            font-family: "Cambria";
+            color: #4f8b89;
+            padding:4px;
+            margin-top: 10px;
+        }
+        .textos {
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+            justify-content: display-evenly;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <img id="logo" src="Imagens\image-logo-2.png" alt="logo do site - ilustração de uma poção verde rodeada de flores roxas e amarelas">
+        <img src="Imagens\image-logo-2.png" alt="logo do site - ilustração de uma poção verde rodeada de flores roxas e amarelas">
     </div>
     <nav>
         <ul class="navbar">
-            <li><a href="url">Sobre</a></li>
-            <li><a href="url">Livros</a></li>
-            <li><a href="url">Músicas</a></li>
-            <li><a href="url">Textos</a></li>
+            <li><a href="url">sobre</a></li>
+            <li><a href="url">livros</a></li>
+            <li><a href="url">músicas</a></li>
+            <li><a href="url">textos</a></li>
         </ul>
     </nav>
     <div class="sobre-mim">
-        
+        <div class="foto-nome">
+            <img src="Imagens\sobre-mim1.png" alt="Pintura de Daniel F. Gerhartz, com mãos segurando um livro aberto">
+            <h5>conheça a autora</h5>
+            <h2><b>Leticia F. Cassimiro</b></h2>
+        </div>
+        <div class="textos">
+            <div class="info-pessoal">
+                <h3>Quem sou eu?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            <div class="interesses">
+                <h3>O que você encontrará aqui:</h3>
+                <ul>
+                    <li>aaaaaa</li>
+                    <li>bbbbbb</li>
+                    <li>cccccc</li>
+                    <li>dddddd</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
