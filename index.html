@@ -6,45 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
+        body {
+            margin: 0px;
         }
-        li a {
-            display: block;
-            color: white;
+        .header {
+            font-family:"Cambria", "Georgia";
             text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+            background-color: #ebddbf;
+            height:220px;
         }
-        li a:hover {
-            background-color: #111;
+        img {
+            margin-top: 12px;
+            width: 16%;
         }
-        .icon-name {
-            display: block;
-            margin-left:auto;
-            margin-right: auto;
-            width: 240px;
-            height: 240px;
+        .elementos {
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            margin-top: -20px;
+            margin-left: 200px;
+            margin-right: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            align-items: center;
+            color: whitesmoke;
+            font-weight: 550;
+            font-family: Verdana;
+            background-color: #62a07b;
+        }
+        .cores {
+            color-scheme: #dfd0af, #e8acac, #a45785, #85586c, #a1c0a1;
+            color-scheme: #e4e6c3, #88baa3, #ba1e4a, #63203d, #361f2d;
+            color-scheme: #62a07b, #4f8b89, #536c8d, #5c4f79, #613860;
+            color-scheme: #7ebeb2, #d1f3db, #da9c3c, #bc1953, #7d144c;
+            color-scheme: #decba0, #a0ab94, #6b9795, #594461, #6e1538;
+            color-scheme: #81749c, #4d3e6b, #8daec3, #c5dfe0, #fcfce2;
         }
     </style>
 </head>
 <body>
-    <!--Criar a barra de navegação aqui-->
-    <div>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+    <div class="header">
+        <img id="logo" src="Imagens\image-logo-2.png" alt="logo do site - ilustração de uma poção verde rodeada de flores roxas e amarelas">
+    </div>
+    <nav class="navbar">
+        <ul class="elementos">
+            <li class="#nav">Sobre</li>
+            <li class="#nav">Livros</li>
+            <li class="#nav">Receitas</li>
+            <li class="#nav">Diversos</li>
         </ul>
-    </div>
-    <div class="icon-name">
-        <img src="Imagens\icone-perfil.png" alt="ícone de perfil circular em preto e branco">
-            <!--Centralizar a imagem-->
-    </div>
+    </nav>
 </body>
 </html>
