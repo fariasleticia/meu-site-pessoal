@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="icon" type="image/x-icon" href="Imagens\image-logo-2.png">
     <style>
         body {
             margin: 0px;
+            background-image: url(Imagens/fundo-do-site2.jpg);
         }
         .header {
             font-family:"Cambria", "Georgia";
@@ -19,9 +21,10 @@
             margin-top: 12px;
             width: 16%;
         }
-        .elementos {
+        .navbar {
             border-radius: 10px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             list-style: none;
             margin-top: -20px;
@@ -29,13 +32,22 @@
             margin-right: 200px;
             padding-top: 10px;
             padding-bottom: 10px;
-            padding-left: 0;
-            padding-right: 0;
             align-items: center;
             color: whitesmoke;
             font-weight: 550;
             font-family: Verdana;
             background-color: #62a07b;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #88baa3;
         }
         .cores {
             color-scheme: #dfd0af, #e8acac, #a45785, #85586c, #a1c0a1;
@@ -51,13 +63,16 @@
     <div class="header">
         <img id="logo" src="Imagens\image-logo-2.png" alt="logo do site - ilustração de uma poção verde rodeada de flores roxas e amarelas">
     </div>
-    <nav class="navbar">
-        <ul class="elementos">
-            <li class="#nav">Sobre</li>
-            <li class="#nav">Livros</li>
-            <li class="#nav">Receitas</li>
-            <li class="#nav">Diversos</li>
+    <nav>
+        <ul class="navbar">
+            <li><a href="url">Sobre</a></li>
+            <li><a href="url">Livros</a></li>
+            <li><a href="url">Músicas</a></li>
+            <li><a href="url">Textos</a></li>
         </ul>
     </nav>
+    <div class="sobre-mim">
+        
+    </div>
 </body>
 </html>
