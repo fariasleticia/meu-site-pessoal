@@ -57,6 +57,31 @@
             .cores {
                 color: #489c83, #7DD2B1, #94E5A9, #8478b1, #a59acc, #EBCFA0;
             }
+            .titulo-grande {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                background-color: #8478b1;
+                height: 3px;
+                margin-top: 85px;
+            }
+            h1 {
+                font-family: 'Euphoria Script', cursive;
+                font-size: 400%;
+                color: #489c83;
+                background-color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .playlist {
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+            .iframe {
+                display: flex;
+                justify-content: center;
+                margin-top: 70px;
+            }
         </style>
 <body>
     <header>
@@ -78,5 +103,12 @@
             </li>
         </ul>
     </nav>
+    <section class="playlist">
+        <div class="titulo-grande">
+            <h1>Minha Playlist</h1>
+        </div>
+        <div class="iframe">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5GmQ9sh8Ds6sQZxpZHRaq6?utm_source=generator&theme=0" width="800" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        </div>
+    </section>
 </body>
 </html>
