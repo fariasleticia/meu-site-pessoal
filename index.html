@@ -5,46 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="icon" type="image/x-icon" href="Imagens\image-logo-2.png">
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
+        body {
+            margin: 0px;
+            background-image: url(Imagens/fundo-do-site2.jpg);
+        }
+        .header {
+            font-family:"Cambria", "Georgia";
+            text-align: center;
+            background-color: #ebddbf;
+            height:220px;
+        }
+        img {
+            margin-top: 12px;
+            width: 16%;
+        }
+        .navbar {
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            list-style: none;
+            margin-top: -20px;
+            margin-left: 200px;
+            margin-right: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-items: center;
+            color: whitesmoke;
+            font-weight: 550;
+            font-family: Verdana;
+            background-color: #62a07b;
         }
         li a {
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 16px;
+            padding: 5px;
+            border-radius: 5px;
             text-decoration: none;
         }
         li a:hover {
-            background-color: #111;
+            background-color: #88baa3;
         }
-        .icon-name {
-            display: block;
-            margin-left:auto;
-            margin-right: auto;
-            width: 240px;
-            height: 240px;
+        .cores {
+            color-scheme: #dfd0af, #e8acac, #a45785, #85586c, #a1c0a1;
+            color-scheme: #e4e6c3, #88baa3, #ba1e4a, #63203d, #361f2d;
+            color-scheme: #62a07b, #4f8b89, #536c8d, #5c4f79, #613860;
+            color-scheme: #7ebeb2, #d1f3db, #da9c3c, #bc1953, #7d144c;
+            color-scheme: #decba0, #a0ab94, #6b9795, #594461, #6e1538;
+            color-scheme: #81749c, #4d3e6b, #8daec3, #c5dfe0, #fcfce2;
         }
     </style>
 </head>
 <body>
-    <!--Criar a barra de navegação aqui-->
-    <div>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
+    <div class="header">
+        <img id="logo" src="Imagens\image-logo-2.png" alt="logo do site - ilustração de uma poção verde rodeada de flores roxas e amarelas">
     </div>
-    <div class="icon-name">
-        <img src="Imagens\icone-perfil.png" alt="ícone de perfil circular em preto e branco">
-            <!--Centralizar a imagem-->
+    <nav>
+        <ul class="navbar">
+            <li><a href="url">Sobre</a></li>
+            <li><a href="url">Livros</a></li>
+            <li><a href="url">Músicas</a></li>
+            <li><a href="url">Textos</a></li>
+        </ul>
+    </nav>
+    <div class="sobre-mim">
+        
     </div>
 </body>
 </html>
