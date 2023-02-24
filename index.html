@@ -1,78 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="icon" type="image/x-icon" href="Imagens\image-logo-2.png">
-    <style>
-        body {
-            margin: 0px;
-            background-image: url(Imagens/fundo-do-site2.jpg);
-        }
-        .header {
-            font-family:"Cambria", "Georgia";
-            text-align: center;
-            background-color: #ebddbf;
-            height:220px;
-        }
-        img {
-            margin-top: 12px;
-            width: 16%;
-        }
-        .navbar {
-            border-radius: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            list-style: none;
-            margin-top: -20px;
-            margin-left: 200px;
-            margin-right: 200px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            align-items: center;
-            color: whitesmoke;
-            font-weight: 550;
-            font-family: Verdana;
-            background-color: #62a07b;
-        }
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 5px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        li a:hover {
-            background-color: #88baa3;
-        }
-        .cores {
-            color-scheme: #dfd0af, #e8acac, #a45785, #85586c, #a1c0a1;
-            color-scheme: #e4e6c3, #88baa3, #ba1e4a, #63203d, #361f2d;
-            color-scheme: #62a07b, #4f8b89, #536c8d, #5c4f79, #613860;
-            color-scheme: #7ebeb2, #d1f3db, #da9c3c, #bc1953, #7d144c;
-            color-scheme: #decba0, #a0ab94, #6b9795, #594461, #6e1538;
-            color-scheme: #81749c, #4d3e6b, #8daec3, #c5dfe0, #fcfce2;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <img id="logo" src="Imagens\image-logo-2.png" alt="logo do site - ilustração de uma poção verde rodeada de flores roxas e amarelas">
-    </div>
-    <nav>
-        <ul class="navbar">
-            <li><a href="url">Sobre</a></li>
-            <li><a href="url">Livros</a></li>
-            <li><a href="url">Músicas</a></li>
-            <li><a href="url">Textos</a></li>
-        </ul>
-    </nav>
-    <div class="sobre-mim">
-        
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="icon" type="image/x-icon" href="Imagens\image-logo-2.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap">
+        <style>
+            body {
+                margin: 0;
+                background-image: url('Imagens/fundo-do-site2.jpg');
+            }
+            header {
+                text-align: center;
+                background-color: #EBCFA0;
+                height: 240px;
+            }
+            header > img {
+                margin-top: 12px;
+                width: 16%;
+            }
+            .navbar {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                align-content: center;
+                display: flex;
+                list-style: none;
+                width: 50%;
+                margin-left: 25%;
+                font-family: 'DM Sans', sans-serif;
+                font-size: large;
+                font-weight: 700;
+                color: beige;
+                margin-top: -20px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #489c83;
+            }
+            li a {
+                color: white;
+                text-align: center;
+                padding: 5px;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #6fb8a2;
+            }
+            .cores {
+                color: #489c83, #7DD2B1, #94E5A9, #8478b1, #a59acc, #EBCFA0;
+            }
+            .foto-nome {
+                margin-top: 45px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .foto-nome > img {
+                width: 20%;
+                border-radius: 50%;
+                border-style: solid;
+                border-color: #a59acc;
+                border-width: 10px;
+            }
+            .foto-nome > h5 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 100%;
+                font-weight: 550;
+                color: white;
+                padding: 2px 11px 3px 10px;
+                margin-top: -25px;
+                background-color: #489c83;
+                border-radius: 10px;
+            }
+            .foto-nome > h2 {
+                font-family: 'DM Serif Display', serif;
+                color: #489c83;
+                padding: 4px;
+                margin: 0;
+            }
+            .textos {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-family: 'DM Sans', sans-serif;
+            }
+            .textos > div > h3 {
+                font-family: 'DM Serif Display', serif;
+                color: #8478b1;
+            }
+            .textos > div {
+                margin: 5px;
+                width: 27%;
+            }
+            .info-pessoal {
+                text-align: right;
+                padding-right: 40px;
+            }
+            .interesses {
+                text-align: left;
+                padding-left: 5px;
+            }
+            .interesses > ul > li {
+                list-style: circle;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Imagens\image-logo-2.png" alt="logo do site - ilustração de uma poção verde rodeada de flores roxas e amarelas">
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li>
+                    <a href="http://127.0.0.1:5500/index.html">sobre</a>
+                </li>
+                <li>
+                    <a href="url">livros</a>
+                </li>
+                <li>
+                    <a href="url">músicas</a>
+                </li>
+                <li>
+                    <a href="url">textos</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="sobre-mim">
+            <div class="foto-nome">
+                <img src="Imagens\sobre-mim1.png" alt="Pintura de Daniel F. Gerhartz, com mãos segurando um livro aberto">
+                <h5>conheça a autora</h5>
+                <h2>
+                    <b>Leticia F. Cassimiro</b>
+                </h2>
+            </div>
+            <div class="textos">
+                <div class="info-pessoal">
+                    <h3>Quem sou eu</h3>
+                    <p>Estudante do Ensino Médio, apaixonada por
+                        <b>Humanas e Literatura</b>. Gosta de explorar o
+                        <b>universo literário</b>, embora tenha uma queda por livros com uma boa
+                        <b>representatividade</b>. Sua convivência com a
+                        <b>escrita</b>
+                        é complicada, mas de vez em quando as duas assumem um relacionamento sério. Se diverte ao preparar comidinhas vegetais e defende um
+                        <b>veganismo popular</b>
+                        que abrace todas as causas. Adora pesquisar sobre
+                        <b>magia e mitos</b>
+                        - e acredita que nunca se pode aprender o suficiente sobre algo.</p>
+                </div>
+                <div class="interesses">
+                    <h3>O que você encontrará aqui</h3>
+                    <ul>
+                        <li>Resenhas, análises e devaneios</li>
+                        <li>
+                            <b>Livros, filmes e séries</b>
+                            de fantasia, aventura, ficção, romance, drama</li>
+                        <li>Recomendações de musicais, trilhas sonoras,
+                            <b>músicas</b>
+                            pop e indie e MPB</li>
+                        <li>Pratos e
+                            <b>receitas</b>
+                            especiais</li>
+                        <li>Estudos sobre
+                            <b>antiespecismo e movimentos sociais</b>
+                        </li>
+                        <li>Histórias de mitologia e
+                            <b>magia</b>
+                        </li>
+                        <li>Contos, textos e poemas autorais</li>
+                        <li>Indicações de pessoas e
+                            <b>artistas incríveis</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
